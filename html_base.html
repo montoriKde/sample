@@ -1,0 +1,100 @@
+<!-- HTMLファイルであることを示す　必ず一行目に書く-->
+<!DOCTYPE html>
+
+<!-- html すべてのコンテンツを囲う -->
+<html>
+
+<!-- head -->
+<head>
+    <!-- meta charset 文字コードを指定 -->
+    <meta charset="UTF-8">
+    <!-- それぞれのデバイスの大きさに合わせてWebサイトを表示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title サイトの上に出る文言　検索したときに大きく出る文章 -->
+    <title>Document</title>
+    <!-- 検索したときにタイトルの下に小さく出る文章 -->
+    <meta name="description" content="~~~">
+    <!-- body ユーザーが見える文章　本体 -->
+    <body>
+       123456789
+    </body>
+</head>
+<html>
+<!-- 以上のコードが定型文であり、!+tabで出力可能 -->
+
+<!-- h+数字 文字表示　大きさごと-->
+<h1>This is a tag</h1>
+<h2>This is a tag</h2>
+<h3>This is a tag</h3>
+
+<!-- p 段落を表示 -->
+<p>This is a tag</p>
+
+<!-- a href="" してリンクに移動-->
+<a href="https://chatgpt.com/">chat.gpt</a>
+<br> <!-- 改行 -->
+<!-- a target="_blank" -->
+<a target="_blank" href="https://chatgpt.com/">chat.gpt other tag</a> 
+
+<!-- 入れ子 -->
+<p>Let's go to <a href="https://chatgpt.com/">chat.gpt</a></p>
+
+<!-- 章を作る -->
+<section>
+    <h1>Chat GPT</h1>
+    <p>very good and useful</p>
+</section>
+
+<!-- ブロックレベル要素　ブロックレベル要素、インライン要素の両方を挟むことが可能-->
+<section>
+    <section>
+        <span>
+
+        </span>
+    </section>
+</section>
+
+<!-- インライン要素　インライン要素のみ挟むことが可能 -->
+<!-- span 特に意味のないタグ-->
+<!-- aタグのみは例外 -->
+<span>
+    <span>
+
+    </span>
+</span>
+
+<!-- ul 順序のないリスト 必ずliとセット -->
+<ul>
+    <!-- li 項目 何入れてもOK-->
+     <li>a</li>
+     <li>b</li>
+     <li>
+        <!-- strong 文字の強調　太字 -->
+        <strong>
+            c
+        </strong>
+    </li>
+</ul>
+
+<!-- header 上から出てくるやつ -->
+<section>
+    <h1>header!</h1>
+    <header>
+        <h1>123</h1>
+    </header>
+</section>
+
+<!-- 構造ミスを教えてくれるツール　https://html5.validator.nu/ errorがOUT warningはOK-->
+ 
+<h1 id="head">Head</h1> <!-- ~~ id="" あるタグに何かしたいときようにIDをつける -->
+<p class="text">Text</p> <!-- ~~ class="" 複数のIDに対応 CSSを使うときは基本これ-->
+<h1 class="text">Text2</h1>
+<!-- style html内でcssをつかえる--> 
+<style>     
+    #head{
+        color: red;
+    }
+    .text{
+        color: blueviolet;
+    }
+</style>
